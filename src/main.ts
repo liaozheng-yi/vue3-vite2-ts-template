@@ -1,6 +1,13 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import AppRoot from './AppRoot.vue'
 import naive from './plugin/naive'
-const app = createApp(App)
+import createAppRouter from './router'
+import { routes } from './router/routes'
+const app = createApp(AppRoot)
+const router = createAppRouter(routes)
+app.use(router)
 app.use(naive)
-app.mount('#app')
+
+router.isReady().then(() => {
+  app.mount('#app')
+})

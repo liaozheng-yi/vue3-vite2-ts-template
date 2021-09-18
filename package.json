@@ -8,7 +8,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.2.6"
+    "vue": "^3.2.6",
+    "vue-router": "^4.0.11"
   },
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
