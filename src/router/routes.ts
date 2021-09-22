@@ -2,7 +2,7 @@ import { RouteRecordRaw } from 'vue-router'
 
 export const aRoutes = [
   {
-    path: '/other',
+    path: '/home',
     component: () => import('../pages/Home.vue')
   }
 ]
@@ -14,7 +14,8 @@ export const routes: RouteRecordRaw[] = [
   },
   {
     path: '/home',
-    component: () => import('../pages/Home.vue')
+    component: () => import('../layout/BaseLayout.vue'),
+    children: aRoutes
   },
   {
     name: 'not-found',

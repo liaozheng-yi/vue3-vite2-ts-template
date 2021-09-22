@@ -1,5 +1,24 @@
-import { create, NButton, NInput, NLayout, NLoadingBarProvider } from 'naive-ui'
+import {
+  create,
+  NButton,
+  NInput,
+  NIcon,
+  NLayout,
+  NLayoutContent,
+  NLayoutHeader,
+  NLayoutSider,
+  NMenu
+} from 'naive-ui'
 const naive = create({
-  components: [NButton, NInput, NLayout, NLoadingBarProvider]
+  components: [
+    NButton,
+    NInput,
+    NIcon,
+    NLayout,
+    NLayoutContent,
+    NLayoutHeader,
+    NLayoutSider,
+    NMenu
+  ]
 })
 export default naive

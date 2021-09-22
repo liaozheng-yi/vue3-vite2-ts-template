@@ -1,10 +1,14 @@
 <template>
-  <!-- <n-layout class="root-layout"> -->
-  <!-- <header /> -->
   <router-view />
-  <!-- </n-layout> -->
 </template>
 <script lang="ts" setup>
-// import Header from './components/header/Header.vue'
+import { onMounted } from 'vue'
+import { loadingBarApiRef } from '@/router'
+import { useLoadingBar } from 'naive-ui'
+const loadingBar = useLoadingBar()
+onMounted(() => {
+  loadingBarApiRef.value = loadingBar
+  loadingBar.finish()
+})
 </script>
 <style></style>
