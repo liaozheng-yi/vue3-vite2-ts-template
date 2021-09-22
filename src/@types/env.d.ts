@@ -6,3 +6,7 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+//声明第三方模块
+declare module 'qs'
+declare module 'js-cookie'
