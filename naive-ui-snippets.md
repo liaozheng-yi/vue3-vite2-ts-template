@@ -8,7 +8,7 @@ No.	Trigger Key	Naive Tag
 7.	ndiv	<n-divider>
 8.	ndro	<n-dropdown>
 9.	nel	<n-ellipsis>
-10.	ngt	<n-ellipsis>
+10.	ngt	<n-gradient-text>
 11.	nic	<n-icon>
 12.	nta	<n-tag>
 13.	nau	<n-auto-complete>
