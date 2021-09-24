@@ -17,13 +17,11 @@ import { h } from 'vue'
 //       )
 //     )
 // }
-export function useIcon(icon: string) {
+export function renderIcon({ icon }: { icon: string }) {
   return () =>
-    h(
-      NIcon,
-      null,
+    h(NIcon, null, () =>
       h('i', {
-        class: 'iconfont ' + icon
+        class: 'ali-icon ' + icon
       })
     )
 }

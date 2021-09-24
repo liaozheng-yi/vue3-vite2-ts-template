@@ -8,12 +8,17 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { useIcon } from '@/utils'
+import { renderIcon } from '@/utils/render'
 let menuOptions = ref([
   {
-    label: '销售',
-    key: 'market',
-    icon: useIcon('icon-xiaoshou')
+    label: '销售1',
+    key: 'market1',
+    icon: renderIcon({ icon: 'icon-xiaoshou' })
+  },
+  {
+    label: '销售2',
+    key: 'market2',
+    icon: renderIcon({ icon: 'icon-xiaoshou' })
   }
 ])
 </script>
